@@ -81,6 +81,14 @@ body{
         padding: 0.5%;
         background-color: aliceblue;
     }
+    button:hover{
+        background-color: lightcoral;
+    }
+    button{
+        margin-top: 1vh;
+        margin-left: 1vw;
+        margin-bottom: 1vh;
+    }
 }
 
 
@@ -117,4 +125,23 @@ body{
         height: 5vh;
         margin-top: 2vh;
     }
+}
+
+
+//---------------------------------------------------------------
+//---------------------------------------------------------------//---------------------------------------------------------------
+//---------------------------------------------------------------
+
+#messageErr{
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+    background-color: lightcoral;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    display: none;
+    
+
+
 }

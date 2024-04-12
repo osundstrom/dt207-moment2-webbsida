@@ -36,6 +36,13 @@ async function getAll() {
         const enddateLI = document.createElement("li");
         enddateLI.textContent = "enddate: " + company.enddate;
         companyUL.appendChild(enddateLI);
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.addEventListener("click", async function() {
+            await deleteData(company.id);
+            companyUL.remove();
+        });
+        companyUL.appendChild(deleteButton);
         allCompanysDiv.appendChild(companyUL);
     });
 }
@@ -47,13 +54,20 @@ let addButton = document.getElementById("addButton");
 let form = document.getElementById("form");
 addButton.addEventListener("click", async function(e) {
     e.preventDefault();
-    console.log("test");
     let companynameInput = document.getElementById("companynameID");
     let jobtitleInput = document.getElementById("jobtitleID");
     let locationInput = document.getElementById("locationID");
     let startdateInput = document.getElementById("startdateID");
     let enddateInput = document.getElementById("enddateID");
-    await createData(companynameInput.value, jobtitleInput.value, locationInput.value, startdateInput.value, enddateInput.value);
+    let errorDiv = document.getElementById("messageErr");
+    if (!companynameInput.value || !jobtitleInput.value || !locationInput.value || !startdateInput.value || !enddateInput.value) {
+        console.log("fyll i all data");
+        errorDiv.textContent = "Fyll i samtliga f\xe4lt";
+        errorDiv.style.display = "block";
+    } else {
+        await createData(companynameInput.value, jobtitleInput.value, locationInput.value, startdateInput.value, enddateInput.value);
+        window.location.reload();
+    }
 });
 //funktion för att skapa nytt (POST)
 async function createData(companyname, jobtitle, location, startdate, enddate) {
@@ -74,7 +88,7 @@ async function createData(companyname, jobtitle, location, startdate, enddate) {
     });
     const data = await response.json(); //Väntar på json
 }
- /*
+/*
 //------------------------------PUT (FETCH)---------------------------------//
 
 let id = 4; //väljer id
@@ -107,18 +121,13 @@ async function editData(companyname, jobtitle, location, startdate, enddate) {
 }
 
 //------------------------------DELETE (FETCH)---------------------------------//
+*/ //deleteData(id);//kallar funktion med id
+async function deleteData(id) {
+    const response = await fetch(`${url}${id}`, {
+        method: "DELETE"
+    });
+    const data = await response.json(); //Väntar till json
+    console.log(data);
+}
 
-
-//deleteData(id);//kallar funktion med id
-
-  async function deleteData(id) { //Funtktion för att radera
-    
-    const response = await fetch(`${url}${id}`, { //fetch url med id
-      method: "DELETE", //delete förfrågan
-    })
-    const data = await response.json();//Väntar till json
-    console.log(data)
-  }
-
-*/ 
 //# sourceMappingURL=index.de158e3a.js.map

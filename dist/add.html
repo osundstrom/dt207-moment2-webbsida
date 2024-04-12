@@ -15,23 +15,25 @@
         </ul>
     </nav>
 
-
+    
     <div id="divForm">
+        
+    <div id="messageErr"></div>
         <form id="form">
             <label for="companyname"> Company name:</label>
-            <input type="text" id="companynameID" class="inputAll" name="companyname">
+            <input type="text" id="companynameID" class="inputAll" name="companyname" required="">
 
             <label for="jobtitle"> Job title:</label>
-            <input type="text" id="jobtitleID" class="inputAll" name="jobtitle">
+            <input type="text" id="jobtitleID" class="inputAll" name="jobtitle" required="">
 
             <label for="location"> Location:</label>
-            <input type="text" id="locationID" class="inputAll" name="location">
+            <input type="text" id="locationID" class="inputAll" name="location" required="">
 
             <label for="startdate"> Start date:</label>
-            <input type="date" id="startdateID" class="inputAll" name="startdate">
+            <input type="date" id="startdateID" class="inputAll" name="startdate" required="">
 
             <label for="enddate"> End date:</label>
-            <input type="date" id="enddateID" class="inputAll" name="enddate">
+            <input type="date" id="enddateID" class="inputAll" name="enddate" required=""> 
 
             <button id="addButton" type="submit"> Lägg till</button>
         </form>

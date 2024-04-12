@@ -77,6 +77,16 @@ body {
   padding: .5%;
 }
 
+#allCompanys button:hover {
+  background-color: #f08080;
+}
+
+#allCompanys button {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+}
+
 #divForm {
   background-color: #f3f3bf;
   border: 1px solid #000;
@@ -107,5 +117,16 @@ body {
   width: 15vw;
   height: 5vh;
   margin-top: 2vh;
+}
+
+#messageErr {
+  background-color: #f08080;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  padding: 1%;
+  display: none;
+  position: relative;
 }
 /*# sourceMappingURL=index.ff312cca.css.map */
