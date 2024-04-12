@@ -61,7 +61,7 @@ async function createData(companyname, jobtitle, location, startdate, enddate) {
 }
 //------------------------------PUT (FETCH)---------------------------------//
 let id = 4; //väljer id
-editData("Editid4", "EditStudent", "EditSundsvall", "2099-01-01", "2100-01-01"); //Kallar funktion med parametrar som behövs
+//editData("Editid4", "EditStudent", "EditSundsvall", "2099-01-01", "2100-01-01"); //Kallar funktion med parametrar som behövs
 //Funktion för att redigera/ändra data till ett visst id
 async function editData(companyname, jobtitle, location, startdate, enddate) {
     //skapar objektet company som sätts efter de inmatade paramertrarna
@@ -83,7 +83,7 @@ async function editData(companyname, jobtitle, location, startdate, enddate) {
     console.log(data);
 }
 //------------------------------DELETE (FETCH)---------------------------------//
-deleteData(id); //kallar funktion med id
+//deleteData(id);//kallar funktion med id
 async function deleteData(id) {
     const response = await fetch(`${url}${id}`, {
         method: "DELETE"

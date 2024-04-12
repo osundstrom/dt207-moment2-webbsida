@@ -51,7 +51,7 @@
 61C:\dt207-moment2-webbsida\node_modules\is-number\package.json133573470687287502 0
 81C:\dt207-moment2-webbsida\node_modules\utility-types\dist\aliases-and-guards.d.ts133573470692753467 0
 59C:\dt207-moment2-webbsida\node_modules\json5\lib\parse.d.ts133573470693183536 0
-30C:\dt207-moment2-webbsida\dist133573618282923398 1
+30C:\dt207-moment2-webbsida\dist133573619184737597 1
 91C:\dt207-moment2-webbsida\node_modules\caniuse-lite\data\features\keyboardevent-location.js133573470707291010 0
 48C:\dt207-moment2-webbsida\node_modules\callsites133573470689452896 1
 72C:\dt207-moment2-webbsida\node_modules\lightningcss\node\targets.js.flow133573470690708096 0
@@ -121,7 +121,7 @@
 115C:\dt207-moment2-webbsida\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\build-test.js133573470688542733 0
 55C:\dt207-moment2-webbsida\node_modules\stable\stable.js133573470688942787 0
 74C:\dt207-moment2-webbsida\node_modules\type-fest\source\readonly-deep.d.ts133573470694483759 0
-37C:\dt207-moment2-webbsida\src\main.js133573606315580762 0
+37C:\dt207-moment2-webbsida\src\main.js133573619184068138 0
 63C:\dt207-moment2-webbsida\node_modules\safe-buffer\package.json133573470688492715 0
 59C:\dt207-moment2-webbsida\node_modules\msgpackr\index.d.cts133573470691023160 0
 45C:\dt207-moment2-webbsida\node_modules\dotenv133573470689992980 1
@@ -5963,10 +5963,10 @@
 48C:\dt207-moment2-webbsida\node_modules\.bin\svgo133573470712483852 0
 70C:\dt207-moment2-webbsida\node_modules\.bin\update-browserslist-db.cmd133573470712488848 0
 41C:\dt207-moment2-webbsida\dist\index.html133573614439394876 0
-48C:\dt207-moment2-webbsida\dist\index.de158e3a.js133573615861299341 0
-52C:\dt207-moment2-webbsida\dist\index.de158e3a.js.map133573615861334348 0
 48C:\dt207-moment2-webbsida\dist\about.95bccf2d.js133573615861489366 0
 65C:\dt207-moment2-webbsida\dist\dt207-moment2-webbsida.59712999.js133573615861489366 0
 52C:\dt207-moment2-webbsida\dist\about.95bccf2d.js.map133573615861539378 0
 49C:\dt207-moment2-webbsida\dist\index.ff312cca.css133573618282893390 0
 53C:\dt207-moment2-webbsida\dist\index.ff312cca.css.map133573618282913400 0
+48C:\dt207-moment2-webbsida\dist\index.de158e3a.js133573619184692581 0
+52C:\dt207-moment2-webbsida\dist\index.de158e3a.js.map133573619184732592 0

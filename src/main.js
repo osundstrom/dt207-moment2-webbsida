@@ -20,7 +20,7 @@ async function getAll() {
       const data = await response.json(); //Väntar på json
       //console.log(data);
 
-      
+
       const allCompanysDiv = document.getElementById("allCompanys");
 
       allCompanysDiv.innerHTML = "";
@@ -91,7 +91,7 @@ async function createData(companyname, jobtitle, location, startdate, enddate) {
 
 let id = 4; //väljer id
 
-editData("Editid4", "EditStudent", "EditSundsvall", "2099-01-01", "2100-01-01"); //Kallar funktion med parametrar som behövs
+//editData("Editid4", "EditStudent", "EditSundsvall", "2099-01-01", "2100-01-01"); //Kallar funktion med parametrar som behövs
 
 //Funktion för att redigera/ändra data till ett visst id
 async function editData(companyname, jobtitle, location, startdate, enddate) { 
@@ -121,7 +121,7 @@ async function editData(companyname, jobtitle, location, startdate, enddate) {
 //------------------------------DELETE (FETCH)---------------------------------//
 
 
-deleteData(id);//kallar funktion med id
+//deleteData(id);//kallar funktion med id
 
   async function deleteData(id) { //Funtktion för att radera
     
