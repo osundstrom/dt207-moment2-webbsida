@@ -1,0 +1,70 @@
+body{
+    background-color: aliceblue;
+}
+
+#navigation{
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
+    position: relative;
+
+    li{
+        list-style: none;
+        display: inline-block;
+        width: 5vw;
+        
+    }
+    a{
+        padding: 8%;
+        border: 2px solid black;
+        text-decoration: none;
+        text-transform: none;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        font-weight: 700;
+    }
+    a:hover{
+        background-color: lightgreen;
+        text-decoration: underline;
+    }
+}
+
+#companyContainer {
+    background-color:rgb(243, 243, 191);
+    width: 44vw;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    height: fit-content;
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid black;
+    h1{
+        text-align: center;
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+
+
+#allCompanys {
+    display: block;
+    margin: auto;
+    width: 40vw;
+    position: relative;
+    li{
+        list-style: none;
+        padding: 0.5%;
+        text-align: left;
+        border-bottom: 1px solid;
+    }
+    ul{
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 40vw;
+        padding: 0.5%;
+        background-color: aliceblue;
+    }
+}
