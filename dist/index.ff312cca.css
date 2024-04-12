@@ -43,7 +43,7 @@ body {
   border-radius: 20px;
   width: 44vw;
   height: fit-content;
-  margin: auto;
+  margin: 5vh auto auto;
   padding-top: .5%;
   padding-bottom: .5%;
   position: relative;

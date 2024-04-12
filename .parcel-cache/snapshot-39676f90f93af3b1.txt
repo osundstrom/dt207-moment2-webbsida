@@ -67,7 +67,7 @@
 69C:\dt207-moment2-webbsida\node_modules\electron-to-chromium\README.md133573470692668442 0
 104C:\dt207-moment2-webbsida\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\index.d.ts133573470694863831 0
 36C:\dt207-moment2-webbsida\.gitignore133573471583757864 0
-30C:\dt207-moment2-webbsida\dist133574076993939759 1
+30C:\dt207-moment2-webbsida\dist133574077317008359 1
 91C:\dt207-moment2-webbsida\node_modules\caniuse-lite\data\features\keyboardevent-location.js133573470707291010 0
 75C:\dt207-moment2-webbsida\node_modules\@swc\helpers\_\_type_of\package.json133573470704645543 0
 91C:\dt207-moment2-webbsida\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Block.cjs133573470691598264 0
@@ -91,7 +91,7 @@
 66C:\dt207-moment2-webbsida\node_modules\is-binary-path\package.json133573470687336318 0
 46C:\dt207-moment2-webbsida\node_modules\timsort133573470690918145 1
 97C:\dt207-moment2-webbsida\node_modules\@parcel\runtime-service-worker\src\ServiceWorkerRuntime.js133573470688732759 0
-45C:\dt207-moment2-webbsida\src\stylesheet.scss133574076991579363 0
+45C:\dt207-moment2-webbsida\src\stylesheet.scss133574077411443331 0
 75C:\dt207-moment2-webbsida\node_modules\svgo\plugins\removeElementsByAttr.js133573470698154422 0
 54C:\dt207-moment2-webbsida\node_modules\.bin\semver.ps1133573470712483852 0
 69C:\dt207-moment2-webbsida\node_modules\nth-check\lib\esm\compile.d.ts133573470693688628 0
@@ -5969,5 +5969,5 @@
 48C:\dt207-moment2-webbsida\dist\index.de158e3a.js133574076993464680 0
 52C:\dt207-moment2-webbsida\dist\index.de158e3a.js.map133574076993514686 0
 41C:\dt207-moment2-webbsida\dist\index.html133574076993869746 0
-49C:\dt207-moment2-webbsida\dist\index.ff312cca.css133574076993909754 0
-53C:\dt207-moment2-webbsida\dist\index.ff312cca.css.map133574076993934769 0
+49C:\dt207-moment2-webbsida\dist\index.ff312cca.css133574077316938348 0
+53C:\dt207-moment2-webbsida\dist\index.ff312cca.css.map133574077317003359 0

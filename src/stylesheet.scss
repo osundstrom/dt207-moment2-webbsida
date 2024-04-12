@@ -54,6 +54,7 @@ body{
     position: relative;
     border-radius: 20px;
     border: 1px solid black;
+    margin-top: 5vh;
     h1{
         text-align: center;
         color: black;
@@ -68,6 +69,7 @@ body{
     margin: auto;
     width: 40vw;
     position: relative;
+    
     li{
         list-style: none;
         padding: 0.5%;
@@ -141,7 +143,7 @@ body{
     border-radius: 10px;
     position: relative;
     display: none;
-    
+
 
 
 }
