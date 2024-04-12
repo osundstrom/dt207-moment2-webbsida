@@ -1,5 +1,5 @@
 "use strict";
-//------------------------------POST (FETCH)---------------------------------//
+//------------------------------GET allt (FETCH)---------------------------------//
 let url = "http://localhost:3000/api/workexperience"; //skapare url
 document.addEventListener("DOMContentLoaded", function() {
     getAll();
@@ -40,6 +40,21 @@ async function getAll() {
     });
 }
 //createData("MIUN", "Student", "Sundsvall", "2023-08-01", "2025-06-01"); //Kallar funktion med parametrar som behövs
+//------------------------------POST (FETCH)---------------------------------//
+//------------------------------POST (FETCH)---------------------------------//
+//------------------------------POST (FETCH)---------------------------------//
+let addButton = document.getElementById("addButton");
+let form = document.getElementById("form");
+addButton.addEventListener("click", async function(e) {
+    e.preventDefault();
+    console.log("test");
+    let companynameInput = document.getElementById("companynameID");
+    let jobtitleInput = document.getElementById("jobtitleID");
+    let locationInput = document.getElementById("locationID");
+    let startdateInput = document.getElementById("startdateID");
+    let enddateInput = document.getElementById("enddateID");
+    await createData(companynameInput.value, jobtitleInput.value, locationInput.value, startdateInput.value, enddateInput.value);
+});
 //funktion för att skapa nytt (POST)
 async function createData(companyname, jobtitle, location, startdate, enddate) {
     //skapar objektet company som sätts efter de inmatade paramertrarna
@@ -59,37 +74,51 @@ async function createData(companyname, jobtitle, location, startdate, enddate) {
     });
     const data = await response.json(); //Väntar på json
 }
+ /*
 //------------------------------PUT (FETCH)---------------------------------//
+
 let id = 4; //väljer id
+
 //editData("Editid4", "EditStudent", "EditSundsvall", "2099-01-01", "2100-01-01"); //Kallar funktion med parametrar som behövs
+
 //Funktion för att redigera/ändra data till ett visst id
-async function editData(companyname, jobtitle, location, startdate, enddate) {
-    //skapar objektet company som sätts efter de inmatade paramertrarna
-    let company = {
-        companyname: companyname,
-        jobtitle: jobtitle,
-        location: location,
-        startdate: startdate,
-        enddate: enddate
-    };
-    const response = await fetch(`${url}${id}`, {
-        method: "PUT",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(company) //Omvandlar till json
-    });
-    const data = await response.json();
-    console.log(data);
-}
-//------------------------------DELETE (FETCH)---------------------------------//
-//deleteData(id);//kallar funktion med id
-async function deleteData(id) {
-    const response = await fetch(`${url}${id}`, {
-        method: "DELETE"
-    });
-    const data = await response.json(); //Väntar till json
-    console.log(data);
+async function editData(companyname, jobtitle, location, startdate, enddate) { 
+  
+  //skapar objektet company som sätts efter de inmatade paramertrarna
+  let company = {
+    companyname: companyname, 
+    jobtitle: jobtitle,
+    location: location,
+    startdate: startdate,
+    enddate: enddate
+  }
+  
+  const response = await fetch(`${url}${id}`, { //url med id.
+    method: "PUT", //PUT Förfrågan
+    headers: {
+      "Content-Type": "application/json", //JSON format
+    },
+
+    body: JSON.stringify(company) //Omvandlar till json
+  })
+  const data = await response.json(); 
+
+  console.log(data)
 }
 
+//------------------------------DELETE (FETCH)---------------------------------//
+
+
+//deleteData(id);//kallar funktion med id
+
+  async function deleteData(id) { //Funtktion för att radera
+    
+    const response = await fetch(`${url}${id}`, { //fetch url med id
+      method: "DELETE", //delete förfrågan
+    })
+    const data = await response.json();//Väntar till json
+    console.log(data)
+  }
+
+*/ 
 //# sourceMappingURL=index.de158e3a.js.map

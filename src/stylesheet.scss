@@ -1,18 +1,25 @@
 body{
     background-color: aliceblue;
+    width: 100vw;
 }
+//---------------------------------------------------------------------
+//---------------------------------------------------------------------
+//---------------------------------------------------------------------
 
+//Navigation
 #navigation{
-    display: block;
-    margin: auto;
+    margin-left: 0vw;
     margin-top: 5vh;
     position: relative;
+    justify-content: center;
 
     li{
         list-style: none;
         display: inline-block;
-        width: 5vw;
-        
+        flex-direction: row;
+        position: relative;
+        width:fit-content;
+        margin-right: 2vw;
     }
     a{
         padding: 8%;
@@ -23,6 +30,8 @@ body{
         background-color: white;
         color: black;
         font-weight: 700;
+        text-indent: none;
+        white-space: nowrap;
     }
     a:hover{
         background-color: lightgreen;
@@ -30,6 +39,11 @@ body{
     }
 }
 
+//---------------------------------------------------------------------
+//---------------------------------------------------------------------
+//---------------------------------------------------------------------
+
+//Lista med alla företag
 #companyContainer {
     background-color:rgb(243, 243, 191);
     width: 44vw;
@@ -66,5 +80,41 @@ body{
         width: 40vw;
         padding: 0.5%;
         background-color: aliceblue;
+    }
+}
+
+
+//---------------------------------------------------------------------
+//---------------------------------------------------------------------
+//---------------------------------------------------------------------
+
+#divForm{
+    display: block;
+    width: fit-content;
+    background-color:rgb(243, 243, 191);
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10vh;
+    form{
+        display:flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 40vh;
+    }
+    input{
+        height: 4vh;
+    }
+
+    label{
+        font-weight: 900;
+        margin-top: 1vh;
+    }
+
+    button{
+        width: 15vw;
+        height: 5vh;
+        margin-top: 2vh;
     }
 }

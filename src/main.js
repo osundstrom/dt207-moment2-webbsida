@@ -1,6 +1,6 @@
 "use strict"
 
-//------------------------------POST (FETCH)---------------------------------//
+//------------------------------GET allt (FETCH)---------------------------------//
 
 let url = "http://localhost:3000/api/workexperience"; //skapare url
 
@@ -61,9 +61,37 @@ async function getAll() {
 
 //createData("MIUN", "Student", "Sundsvall", "2023-08-01", "2025-06-01"); //Kallar funktion med parametrar som behövs
  
+
+//------------------------------POST (FETCH)---------------------------------//
+//------------------------------POST (FETCH)---------------------------------//
+//------------------------------POST (FETCH)---------------------------------//
+
+let addButton = document.getElementById("addButton");
+
+let form = document.getElementById("form");
+
+
+addButton.addEventListener("click", async function(e) {
+  
+  e.preventDefault();
+  console.log("test")
+
+  let companynameInput = document.getElementById("companynameID");
+  let jobtitleInput =  document.getElementById("jobtitleID");
+  let locationInput = document.getElementById("locationID");
+  let startdateInput = document.getElementById("startdateID");
+  let enddateInput = document.getElementById("enddateID");
+
+  
+  await createData(companynameInput.value, jobtitleInput.value, locationInput.value, startdateInput.value, enddateInput.value);
+});
+
+
+
+
 //funktion för att skapa nytt (POST)
 async function createData(companyname, jobtitle, location, startdate, enddate) {
-  
+
   //skapar objektet company som sätts efter de inmatade paramertrarna
   let company = {
     companyname: companyname, 
@@ -73,7 +101,7 @@ async function createData(companyname, jobtitle, location, startdate, enddate) {
     enddate: enddate
   }
   
-  const response = await fetch(url, { //skickat fet mot url
+  const response = await fetch(url, { //skickat fetch mot url
     method: "POST", //POST förfrågan
     headers: {
       "Content-Type": "application/json", //JSON fromat
@@ -82,11 +110,9 @@ async function createData(companyname, jobtitle, location, startdate, enddate) {
     body: JSON.stringify(company) //Gör om company till json
   })
   const data = await response.json(); //Väntar på json
-  
+};
 
-}
-
-
+/*
 //------------------------------PUT (FETCH)---------------------------------//
 
 let id = 4; //väljer id
@@ -132,4 +158,4 @@ async function editData(companyname, jobtitle, location, startdate, enddate) {
     console.log(data)
   }
 
-
+*/
