@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/index.ff312cca.css">
-<<<<<<< HEAD
-    <title>Moment 2 - Webbsida</title>
-</head>
-<body>
-=======
     <script src="/index.de158e3a.js"></script>
     <title>Moment 2 - Webbsida</title>
 </head>
@@ -20,13 +15,7 @@
             <li><a href="/about.html">Om sidan</a></li>
         </ul>
     </nav>
-    <div id="companyContainer">
-        <h1>Moment 2 - DT207G</h1>
-    <div id="allCompanys">
-
-    </div>
-    </div>
->>>>>>> Dev
     
-<script src="/dt207-moment2-webbsida.59712999.js"></script></body>
+    
+<script src="/about.95bccf2d.js"></script></body>
 </html>
