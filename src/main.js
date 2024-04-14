@@ -130,40 +130,7 @@ async function createData(companyname, jobtitle, location, startdate, enddate) {
   const data = await response.json(); //Väntar på json
 };
 
-/*
-//------------------------------PUT (FETCH)---------------------------------//
-
-let id = 4; //väljer id
-
-//editData("Editid4", "EditStudent", "EditSundsvall", "2099-01-01", "2100-01-01"); //Kallar funktion med parametrar som behövs
-
-//Funktion för att redigera/ändra data till ett visst id
-async function editData(companyname, jobtitle, location, startdate, enddate) { 
-  
-  //skapar objektet company som sätts efter de inmatade paramertrarna
-  let company = {
-    companyname: companyname, 
-    jobtitle: jobtitle,
-    location: location,
-    startdate: startdate,
-    enddate: enddate
-  }
-  
-  const response = await fetch(`${url}${id}`, { //url med id.
-    method: "PUT", //PUT Förfrågan
-    headers: {
-      "Content-Type": "application/json", //JSON format
-    },
-
-    body: JSON.stringify(company) //Omvandlar till json
-  })
-  const data = await response.json(); 
-
-  console.log(data)
-}
-
 //------------------------------DELETE (FETCH)---------------------------------//
-*/
 
 //deleteData(id);//kallar funktion med id
 

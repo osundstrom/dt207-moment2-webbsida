@@ -13,60 +13,60 @@ async function getAll() {
     });
     const data = await response.json(); //Väntar på json
     //console.log(data);
-    const allCompanysDiv = document.getElementById("allCompanys");
-    allCompanysDiv.innerHTML = "";
+    const allCompanysDiv = document.getElementById("allCompanys"); //väljer div
+    allCompanysDiv.innerHTML = ""; //rensar så dne är tom
     data.forEach((company)=>{
         console.log(company);
-        const companyUL = document.createElement("ul");
-        const idLI = document.createElement("li");
+        const companyUL = document.createElement("ul"); //skapar ul
+        const idLI = document.createElement("li"); //Skapar li
         idLI.textContent = "ID: " + company.id;
-        companyUL.appendChild(idLI);
-        const companynameLI = document.createElement("li");
-        companynameLI.textContent = "F\xf6retags namn: " + company.companyname;
-        companyUL.appendChild(companynameLI);
-        const jobtitleLi = document.createElement("li");
+        companyUL.appendChild(idLI); //lägger till i UL
+        const companynameLI = document.createElement("li"); //Skapar li
+        companynameLI.textContent = "F\xf6retags namn: " + company.companyname; //sätter texten
+        companyUL.appendChild(companynameLI); //lägger till i UL
+        const jobtitleLi = document.createElement("li"); //Skapar li
         jobtitleLi.textContent = "Roll: " + company.jobtitle;
-        companyUL.appendChild(jobtitleLi);
-        const locationLI = document.createElement("li");
+        companyUL.appendChild(jobtitleLi); //lägger till i UL
+        const locationLI = document.createElement("li"); //Skapar li
         locationLI.textContent = "Plats: " + company.location;
-        companyUL.appendChild(locationLI);
-        const startdateLI = document.createElement("li");
+        companyUL.appendChild(locationLI); //lägger till i UL
+        const startdateLI = document.createElement("li"); //Skapar li
         startdateLI.textContent = "Startdatum: " + company.startdate;
-        companyUL.appendChild(startdateLI);
-        const enddateLI = document.createElement("li");
+        companyUL.appendChild(startdateLI); //lägger till i UL
+        const enddateLI = document.createElement("li"); //Skapar li
         enddateLI.textContent = "Slutdatum: " + company.enddate;
-        companyUL.appendChild(enddateLI);
-        const deleteButton = document.createElement("button");
-        deleteButton.textContent = "Radera";
+        companyUL.appendChild(enddateLI); //lägger till i UL
+        const deleteButton = document.createElement("button"); //Skapar knapp
+        deleteButton.textContent = "Radera"; //sätter texten
         deleteButton.addEventListener("click", async function() {
             await deleteData(company.id);
-            companyUL.remove();
+            companyUL.remove(); //tar bort UL elemntet
         });
-        companyUL.appendChild(deleteButton);
-        allCompanysDiv.appendChild(companyUL);
+        companyUL.appendChild(deleteButton); //lägger till i UL
+        allCompanysDiv.appendChild(companyUL); //lägger till i Div
     });
 }
 //createData("MIUN", "Student", "Sundsvall", "2023-08-01", "2025-06-01"); //Kallar funktion med parametrar som behövs
 //------------------------------POST (FETCH)---------------------------------//
 //------------------------------POST (FETCH)---------------------------------//
 //------------------------------POST (FETCH)---------------------------------//
-let addButton = document.getElementById("addButton");
-let form = document.getElementById("form");
+let addButton = document.getElementById("addButton"); //Väljer knmappne
+let form = document.getElementById("form"); //Väljer form
 addButton.addEventListener("click", async function(e) {
-    e.preventDefault();
-    let companynameInput = document.getElementById("companynameID");
-    let jobtitleInput = document.getElementById("jobtitleID");
-    let locationInput = document.getElementById("locationID");
-    let startdateInput = document.getElementById("startdateID");
-    let enddateInput = document.getElementById("enddateID");
-    let errorDiv = document.getElementById("messageErr");
+    e.preventDefault(); //hindrar defualt
+    let companynameInput = document.getElementById("companynameID"); //Väljer element (input)
+    let jobtitleInput = document.getElementById("jobtitleID"); //Väljer element (input)
+    let locationInput = document.getElementById("locationID"); //Väljer element (input)
+    let startdateInput = document.getElementById("startdateID"); //Väljer element (input)
+    let enddateInput = document.getElementById("enddateID"); //Väljer element (input)
+    let errorDiv = document.getElementById("messageErr"); //Gör en div för error
     if (!companynameInput.value || !jobtitleInput.value || !locationInput.value || !startdateInput.value || !enddateInput.value) {
-        console.log("fyll i all data");
-        errorDiv.textContent = "Fyll i samtliga f\xe4lt";
-        errorDiv.style.display = "block";
+        console.log("fyll i all data"); //i konsoll
+        errorDiv.textContent = "Fyll i samtliga f\xe4lt"; //till div 
+        errorDiv.style.display = "block"; //Så man sr div
     } else {
-        await createData(companynameInput.value, jobtitleInput.value, locationInput.value, startdateInput.value, enddateInput.value);
-        window.location.reload();
+        await createData(companynameInput.value, jobtitleInput.value, locationInput.value, startdateInput.value, enddateInput.value); //skickar in i funktionen
+        window.location.reload(); //laddar om
     }
 });
 //funktion för att skapa nytt (POST)
